@@ -1,138 +1,140 @@
 {
     "participant_id": {
-        "Description": "A cool participant ID",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:ParticipantID",
-                "Label": "Subject Unique Identifier"
+        "description": "A very cool participant ID",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:ParticipantID",
+                "label": "Subject Unique Identifier"
             },
-            "Identifies": "participant"
-        }
+            "missingValues": [],
+            "identifies": "participant"
+        },
+        "units": null
     },
     "session_id": {
-        "Description": "A session ID",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:SessionID",
-                "Label": "Unique session identifier"
+        "description": "A session ID",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:SessionID",
+                "label": "Unique session identifier"
             },
-            "Identifies": "session"
-        }
+            "missingValues": [],
+            "identifies": "session"
+        },
+        "units": null
     },
     "pheno_age": {
-        "Description": "Age of the participant",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Age",
-                "Label": "Age"
+        "description": "Age of the participant",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Age",
+                "label": "Age"
             },
-            "Transformation": {
-                "TermURL": "nb:FromEuro",
-                "Label": "european decimal value"
-            },
-            "MissingValues": [
+            "missingValues": [
                 "NA"
-            ]
-        }
+            ],
+            "transformation": {
+                "termURL": "nb:FromEuro",
+                "label": "european decimal value"
+            }
+        },
+        "units": null
     },
     "pheno_sex": {
-        "Description": "Sex variable",
-        "Levels": {
-            "M": "Male",
-            "F": "Female"
-        },
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Sex",
-                "Label": "Sex"
+        "description": "Sex variable",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Sex",
+                "label": "Sex"
             },
-            "Levels": {
+            "missingValues": [
+                "missing"
+            ],
+            "levels": {
                 "M": {
-                    "TermURL": "snomed:248153007",
-                    "Label": "Male"
+                    "termURL": "snomed:248153007",
+                    "label": "Male"
                 },
                 "F": {
-                    "TermURL": "snomed:248152002",
-                    "Label": "Female"
+                    "termURL": "snomed:248152002",
+                    "label": "Female"
                 }
-            },
-            "MissingValues": [
-                "missing"
-            ]
-        }
+            }
+        },
+        "units": null
     },
     "pheno_group": {
-        "Description": "Group variable",
-        "Levels": {
-            "PAT": "Patient",
-            "CTRL": "Control subject"
-        },
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Diagnosis",
-                "Label": "Diagnosis"
+        "description": "Group variable",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Diagnosis",
+                "label": "Diagnosis"
             },
-            "Levels": {
+            "missingValues": [
+                "NA"
+            ],
+            "levels": {
                 "PAT": {
-                    "TermURL": "snomed:406506008",
-                    "Label": "Attention deficit hyperactivity disorder"
+                    "termURL": "snomed:406506008",
+                    "label": "Attention deficit hyperactivity disorder"
                 },
                 "CTRL": {
-                    "TermURL": "ncit:C94342",
-                    "Label": "Healthy Control"
+                    "termURL": "ncit:C94342",
+                    "label": "Healthy Control"
                 }
-            },
-            "MissingValues": [
-                "NA"
-            ]
-        }
+            }
+        },
+        "units": null
     },
     "tool1_item1": {
-        "Description": "item 1 scores for tool1",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Assessment",
-                "Label": "Assessment tool"
+        "description": "item 1 scores for tool1",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Assessment",
+                "label": "Assessment tool"
             },
-            "IsPartOf": {
-                "TermURL": "cogatlas:trm_57964b8a66aed",
-                "Label": "Montreal Cognitive Assessment"
-            },
-            "MissingValues": [
+            "missingValues": [
                 "missing"
-            ]
-        }
+            ],
+            "isPartOf": {
+                "termURL": "cogatlas:trm_57964b8a66aed",
+                "label": "Montreal Cognitive Assessment"
+            }
+        },
+        "units": null
     },
     "tool1_item2": {
-        "Description": "item 2 scores for tool1",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Assessment",
-                "Label": "Assessment tool"
+        "description": "item 2 scores for tool1",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Assessment",
+                "label": "Assessment tool"
             },
-            "IsPartOf": {
-                "TermURL": "cogatlas:trm_57964b8a66aed",
-                "Label": "Montreal Cognitive Assessment"
-            },
-            "MissingValues": [
+            "missingValues": [
                 "missing"
-            ]
-        }
+            ],
+            "isPartOf": {
+                "termURL": "cogatlas:trm_57964b8a66aed",
+                "label": "Montreal Cognitive Assessment"
+            }
+        },
+        "units": null
     },
     "tool2_item1": {
-        "Description": "item 1 scores for tool2",
-        "Annotations": {
-            "IsAbout": {
-                "TermURL": "nb:Assessment",
-                "Label": "Assessment tool"
+        "description": "item 1 scores for tool2",
+        "annotations": {
+            "isAbout": {
+                "termURL": "nb:Assessment",
+                "label": "Assessment tool"
             },
-            "IsPartOf": {
-                "TermURL": "cogatlas:tsk_4a57abb949ece",
-                "Label": "Unified Parkinson's Disease Rating Scale"
-            },
-            "MissingValues": [
+            "missingValues": [
                 "not completed"
-            ]
-        }
+            ],
+            "isPartOf": {
+                "termURL": "cogatlas:tsk_4a57abb949ece",
+                "label": "Unified Parkinson's Disease Rating Scale"
+            }
+        },
+        "units": null
     }
 }
